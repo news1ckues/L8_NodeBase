@@ -1,0 +1,30 @@
+{
+  "name": "lab-work",
+  "version": "1.0.0",
+  "description": "Laboratory work on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production node index.js",
+    "start": "cross-env NODE_ENV=development nodemon index.js",
+    "deploy": "cross-env NODE_ENV=domain node index.js",
+    "os-info": "node os/index.js",
+    "file-system": "node file-system/index.js",
+    "use-modules": "node use.js"
+  },
+  "keywords": [
+    "nodejs",
+    "lab",
+    "fs",
+    "os"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
